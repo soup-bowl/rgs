@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "butterscrape"
+version = "0.1.0"
+description = ""
+authors = ["soup-bowl <code@soupbowl.io>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+beautifulsoup4 = "^4.12.3"
+requests = "^2.32.3"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint.format]
+indent-string = "\t"
+max-line-length = 120
+
+[tool.pylint.design]
+max-attributes = 10
